@@ -97,8 +97,17 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-
-	  /* USER CODE END WHILE */
+	  LCD_Fill(0 );
+	  delay_ms(1000);
+	  LCD_Fill(1 );
+	  delay_ms(1000);
+	  LCD_Fill(2 );
+	  delay_ms(1000);
+	  LCD_Fill(3 );
+	  delay_ms(1000);
+	  LCD_draw_image(gImage_666);
+	  delay_ms(1000);
+    /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
   }
@@ -159,7 +168,7 @@ static void MX_I2C1_Init(void)
 
   /* USER CODE END I2C1_Init 1 */
   hi2c1.Instance = I2C1;
-  hi2c1.Init.ClockSpeed = 100000;
+  hi2c1.Init.ClockSpeed = 400000;
   hi2c1.Init.DutyCycle = I2C_DUTYCYCLE_2;
   hi2c1.Init.OwnAddress1 = 0;
   hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;

@@ -21,22 +21,26 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.6.0
 Dialog DLL:      TCM.DLL V1.36.2.0
  
 <h2>Project:</h2>
-E:\_CUBEmax_project\LCD12881\MDK-ARM\LCD12881.uvprojx
-Project File Date:  07/17/2021
+E:\_CUBEmax_project\LCD12881\LCD12881-uc1617s-STM32f103\MDK-ARM\LCD12881.uvprojx
+Project File Date:  07/23/2021
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'LCD12881'
-compiling main.c...
+compiling LCD12881.c...
 ..\user\Inc\LCD12881.h(15): warning:  #1-D: last line of file ends without a newline
   void LCD_draw_image(const uint8_t * image_data);
-../Core/Src/main.c(69): warning:  #177-D: variable "A"  was declared but never referenced
-  	uint8_t A=0;
-../Core/Src/main.c: 2 warnings, 0 errors
+..\user\Src\LCD12881.c(108): warning:  #177-D: variable "q"  was declared but never referenced
+    uint8_t q    = x % 4;                           // quad
+..\user\Src\LCD12881.c(152): warning:  #1-D: last line of file ends without a newline
+  }
+..\user\Src\LCD12881.c(142): warning:  #177-D: variable "n"  was declared but never referenced
+  	uint8_t n=0;
+..\user\Src\LCD12881.c: 4 warnings, 0 errors
 linking...
-Program Size: Code=4386 RO-data=3050 RW-data=16 ZI-data=2136  
+Program Size: Code=4538 RO-data=3050 RW-data=16 ZI-data=2136  
 FromELF: creating hex file...
-"LCD12881\LCD12881.axf" - 0 Error(s), 2 Warning(s).
+"LCD12881\LCD12881.axf" - 0 Error(s), 4 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -59,7 +63,7 @@ Package Vendor: Keil
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.2.0
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:02
 </pre>
 </body>
 </html>

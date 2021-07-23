@@ -3,7 +3,7 @@
 <title>Static Call Graph - [LCD12881\LCD12881.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image LCD12881\LCD12881.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Sat Jul 17 16:40:45 2021
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Fri Jul 23 17:14:28 2021
 <BR><P>
 <H3>Maximum Stack Usage =        184 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -390,9 +390,9 @@ Global Symbols
 <LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_WaitOnBTFFlagUntilTimeout
 <LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_MasterRequestWrite
 </UL>
-<BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_send_data
+<BR>[Called By]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Fill
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_send_data
 <LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_send_cmd
-<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Fill
 </UL>
 
 <P><STRONG><a name="[50]"></a>HAL_I2C_MspInit</STRONG> (Thumb, 80 bytes, Stack size 32 bytes, stm32f1xx_hal_msp.o(i.HAL_I2C_MspInit))
@@ -488,19 +488,19 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f103xe.o(RESET)
 </UL>
-<P><STRONG><a name="[65]"></a>LCD_12881_init</STRONG> (Thumb, 104 bytes, Stack size 8 bytes, lcd12881.o(i.LCD_12881_init))
+<P><STRONG><a name="[65]"></a>LCD_12881_init</STRONG> (Thumb, 176 bytes, Stack size 8 bytes, lcd12881.o(i.LCD_12881_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 184<LI>Call Chain = LCD_12881_init &rArr; LCD_Fill &rArr; setPageAndRow &rArr; iic_send_cmd &rArr; HAL_I2C_Master_Transmit &rArr; I2C_MasterRequestWrite &rArr; I2C_WaitOnMasterAddressFlagUntilTimeout
 </UL>
-<BR>[Calls]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<BR>[Calls]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Fill
+<LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 <LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_send_cmd
 <LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
-<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
-<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Fill
 </UL>
 <BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[6a]"></a>LCD_Fill</STRONG> (Thumb, 76 bytes, Stack size 48 bytes, lcd12881.o(i.LCD_Fill))
+<P><STRONG><a name="[6a]"></a>LCD_Fill</STRONG> (Thumb, 84 bytes, Stack size 48 bytes, lcd12881.o(i.LCD_Fill))
 <BR><BR>[Stack]<UL><LI>Max Depth = 176<LI>Call Chain = LCD_Fill &rArr; setPageAndRow &rArr; iic_send_cmd &rArr; HAL_I2C_Master_Transmit &rArr; I2C_MasterRequestWrite &rArr; I2C_WaitOnMasterAddressFlagUntilTimeout
 </UL>
 <BR>[Calls]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_I2C_Master_Transmit
@@ -508,9 +508,10 @@ Global Symbols
 <LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_send_cmd
 </UL>
 <BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_12881_init
+<LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[6c]"></a>LCD_draw_image</STRONG> (Thumb, 46 bytes, Stack size 16 bytes, lcd12881.o(i.LCD_draw_image))
+<P><STRONG><a name="[6c]"></a>LCD_draw_image</STRONG> (Thumb, 54 bytes, Stack size 16 bytes, lcd12881.o(i.LCD_draw_image))
 <BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = LCD_draw_image &rArr; setPageAndRow &rArr; iic_send_cmd &rArr; HAL_I2C_Master_Transmit &rArr; I2C_MasterRequestWrite &rArr; I2C_WaitOnMasterAddressFlagUntilTimeout
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setPageAndRow
@@ -571,6 +572,7 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = delay_ms
 </UL>
 <BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_12881_init
+<LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[67]"></a>delay_us</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, lcd12881.o(i.delay_us))
@@ -583,9 +585,9 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_I2C_Master_Transmit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_draw_image
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Fill
 <LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_12881_init
 <LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setPageAndRow
-<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Fill
 </UL>
 
 <P><STRONG><a name="[6d]"></a>iic_send_data</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, lcd12881.o(i.iic_send_data))
@@ -596,10 +598,12 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_draw_image
 </UL>
 
-<P><STRONG><a name="[46]"></a>main</STRONG> (Thumb, 58 bytes, Stack size 0 bytes, main.o(i.main))
+<P><STRONG><a name="[46]"></a>main</STRONG> (Thumb, 122 bytes, Stack size 0 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 184<LI>Call Chain = main &rArr; LCD_12881_init &rArr; LCD_Fill &rArr; setPageAndRow &rArr; iic_send_cmd &rArr; HAL_I2C_Master_Transmit &rArr; I2C_MasterRequestWrite &rArr; I2C_WaitOnMasterAddressFlagUntilTimeout
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_draw_image
+<BR>[Calls]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_draw_image
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Fill
 <LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_12881_init
 <LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Init
 <LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_I2C_Init

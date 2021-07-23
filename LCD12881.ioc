@@ -1,6 +1,8 @@
 #MicroXplorer Configuration settings - do not modify
 File.Version=6
 GPIO.groupedBy=Group By Peripherals
+I2C1.ClockSpeed=20000
+I2C1.IPParameters=ClockSpeed
 KeepUserPlacement=false
 Mcu.Family=STM32F1
 Mcu.IP0=I2C1
