@@ -150,3 +150,33 @@ iic_send_cmd(0xAE);
   }
 	iic_send_cmd(0xAF);
 }
+void LCD_8x16(uint8_t x0,uint8_t y0,uint8_t upColor,uint8_t downColor,int8_t *CHAR)//显示8*16的字符，参数分别为起点x0 yo,字符颜色，底纹颜色，字符串
+{
+	uint8_t x=x0,i=0,j,c,s;
+	uint8_t tx_data[2];
+	iic_send_cmd(0xAE);
+	while(CHAR[i]!='\0')
+	{
+		for(j=0;j<16;j++)
+		{
+			setPageAndRow( x, y0+j );//定位显示区域
+			
+			c=F8X16[(CHAR[i]-32)][j];
+			for(s=0;s<8;s++)
+			{
+				tx_data[s/4]>>=2;
+				if((c&0x01)==0x01)
+					tx_data[s/4]|=(upColor&0x03)<<6;
+				else 
+					tx_data[s/4]|=(downColor&0x03)<<6;
+				
+				c>>=1;
+			}
+			
+			iic_send_data(tx_data,2);			
+		}
+		i++;
+		x+=2;	
+	}
+	iic_send_cmd(0xAF);
+}

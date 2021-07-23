@@ -1,6 +1,6 @@
 Dependencies for Project 'LCD12881', Target 'LCD12881': (DO NOT MODIFY !)
 F (startup_stm32f103xe.s)(0x60FA7E08)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_LCD12881-IC:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\ASUS\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\1.0.5\Device\Include--pd "__UVISION_VERSION SETA 528" --pd "_RTE_ SETA 1" --pd "STM32F10X_HD SETA 1"--list startup_stm32f103xe.lst --xref -o lcd12881\startup_stm32f103xe.o --depend lcd12881\startup_stm32f103xe.d)
-F (../Core/Src/main.c)(0x60FA8066)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\user\Inc-I.\RTE\_LCD12881-IC:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\ASUS\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\1.0.5\Device\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o lcd12881\main.o --omf_browse lcd12881\main.crf --depend lcd12881\main.d)
+F (../Core/Src/main.c)(0x60FA919F)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\user\Inc-I.\RTE\_LCD12881-IC:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\ASUS\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\1.0.5\Device\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o lcd12881\main.o --omf_browse lcd12881\main.crf --depend lcd12881\main.d)
 I (../Core/Inc/main.h)(0x60FA7E05)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x60F28E50)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x60FA7E05)
@@ -27,7 +27,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x60F28E50)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x60F28E50)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x60F28E50)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x60F28E50)
-I (..\user\Inc\LCD12881.h)(0x60F2976A)
+I (..\user\Inc\LCD12881.h)(0x60FA919F)
 F (../Core/Src/stm32f1xx_it.c)(0x60FA7E04)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\user\Inc-I.\RTE\_LCD12881-IC:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\ASUS\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\1.0.5\Device\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o lcd12881\stm32f1xx_it.o --omf_browse lcd12881\stm32f1xx_it.crf --depend lcd12881\stm32f1xx_it.d)
 I (../Core/Inc/main.h)(0x60FA7E05)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x60F28E50)
@@ -473,7 +473,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x60F28E50)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x60F28E50)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x60F28E50)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x60F28E50)
-F (..\user\Src\LCD12881.c)(0x60FA8872)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\user\Inc-I.\RTE\_LCD12881-IC:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\ASUS\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\1.0.5\Device\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o lcd12881\lcd12881.o --omf_browse lcd12881\lcd12881.crf --depend lcd12881\lcd12881.d)
+F (..\user\Src\LCD12881.c)(0x60FA919F)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\user\Inc-I.\RTE\_LCD12881-IC:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\ASUS\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\1.0.5\Device\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o lcd12881\lcd12881.o --omf_browse lcd12881\lcd12881.crf --depend lcd12881\lcd12881.d)
 I (../Core/Inc/main.h)(0x60FA7E05)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x60F28E50)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x60FA7E05)
@@ -500,9 +500,37 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x60F28E50)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x60F28E50)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x60F28E50)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x60F28E50)
-I (..\user\Inc\LCD12881.h)(0x60F2976A)
+I (..\user\Inc\LCD12881.h)(0x60FA919F)
 F (..\user\Src\image.c)(0x60F2976A)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\user\Inc-I.\RTE\_LCD12881-IC:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\ASUS\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\1.0.5\Device\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o lcd12881\image.o --omf_browse lcd12881\image.crf --depend lcd12881\image.d)
-I (..\user\Inc\LCD12881.h)(0x60F2976A)
+I (..\user\Inc\LCD12881.h)(0x60FA919F)
+I (../Core/Inc/main.h)(0x60FA7E05)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x60F28E50)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x60FA7E05)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x60F28E50)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x60F28E50)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x60F28E50)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h)(0x60F28E50)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x60F28E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x60F28E3A)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x60F28E3A)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x60F28E3A)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x60F28E50)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x60F28E50)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x60F28E50)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x60F28E50)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x60F28E50)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x60F28E50)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x60F28E50)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x60F28E50)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x60F28E50)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x60F28E50)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x60F28E50)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x60F28E50)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x60F28E50)
+F (..\user\Src\font.c)(0x60FA8FB8)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\user\Inc-I.\RTE\_LCD12881-IC:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\ASUS\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\1.0.5\Device\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o lcd12881\font.o --omf_browse lcd12881\font.crf --depend lcd12881\font.d)
+I (..\user\Inc\LCD12881.h)(0x60FA919F)
 I (../Core/Inc/main.h)(0x60FA7E05)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x60F28E50)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x60FA7E05)

@@ -97,16 +97,26 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  LCD_Fill(0 );
-	  delay_ms(1000);
-	  LCD_Fill(1 );
-	  delay_ms(1000);
-	  LCD_Fill(2 );
-	  delay_ms(1000);
-	  LCD_Fill(3 );
-	  delay_ms(1000);
 	  LCD_draw_image(gImage_666);
 	  delay_ms(1000);
+	  LCD_Fill(0 );
+	  delay_ms(500);
+	  LCD_Fill(1 );
+	  delay_ms(500);
+	  LCD_Fill(2 );
+	  delay_ms(500);
+	  LCD_Fill(3 );
+	  delay_ms(500);
+	  LCD_Fill(0 );
+	  LCD_8x16(0,0*16,3,0,"Hello");
+	  LCD_8x16(0,1*16,3,0,"  world");
+	  LCD_8x16(0,2*16,3,0,"ABCDEFGHIJ");
+	  LCD_8x16(0,3*16,2,0,"abcdefghij");
+	  LCD_8x16(0,4*16,1,0,"0123456789");	  
+	  LCD_8x16(0,5*16,0,3,"ABCDEFGHIJ");
+	  LCD_8x16(0,6*16,0,2,"abcdefghij");
+	  LCD_8x16(0,7*16,0,1,"0123456789");	  
+	  delay_ms(5000);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

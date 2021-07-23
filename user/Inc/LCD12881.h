@@ -4,6 +4,7 @@
 #define UC1617_DATA_ADDR 0x72  
 
 extern const unsigned char gImage_666[2688];
+extern const unsigned char F8X16[][16];
 
 void delay_us(uint16_t time);
 void delay_ms(uint16_t time);
@@ -13,3 +14,4 @@ void iic_send_data(uint8_t* Data,uint16_t data_num);
 void LCD_12881_init(void);
 void LCD_Fill( uint8_t color );
 void LCD_draw_image(const uint8_t * image_data);
+void LCD_8x16(uint8_t x0,uint8_t y0,uint8_t upColor,uint8_t downColor,int8_t *CHAR);
